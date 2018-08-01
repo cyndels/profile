@@ -11,60 +11,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card-white text-center">
-      <img src="images/profile-picture.jpg" alt="Profile picture - Cyndel Stuyvers" id="profile-pic" class="img-circle border-salmon">
-      <h1>Cyndel Stuyvers</h1>
-      <h2>Junior Programmer @ Le Wagon - Marseille</h2>
-      <p>Creative and passionate, I like to think out-of-the-box and I am always looking for new things to try and discover. I am also curious about everything relating new technologies, innovation and entrepreneurship.</p>
-      <p>Graduated with a Master's Degree in Marketing / Communication, and after 3 months in San Francisco, meeting inspiring people and embracing bright ideas, <strong>I decided to tackle new challenges and give to my career a new dimension</strong>.</p>
-      <p>So here I am in Batch #176 @ Le Wagon Marseille, ready to change my life while learning to code! 🚀</p>
-      <br>
-      <p><a href="www.lewagon.com" target="_blank" class="button-salmon">See for yourself</a></p>
-    </div>
-    <div class="card-white text-center">
-      <ul class="list-inline">
-        <li><a href="https://www.facebook.com/cyndel.stuyvers" target="_blank"><i class="fab fa-facebook-f"></i><br>Facebook</a></li>
-        <li><a href="https://www.instagram.com/cyndels_/" target="_blank"><i class="fab fa-instagram"></i><br>Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/cyndel-stuyvers/" target="_blank"><i class="fab fa-linkedin-in"></i><br>Linkedin</a></li>
-      </ul>
-    </div>
-    <div class="card-white">
-      <h2 class="text-center">My favorite movies</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img src="images/pursuit-of-happyness.jpg" alt="The Pursuit of Happyness" class="movie-img-size"></td>
-            <td>
-              <h3 class="text-left">The Pursuit of Happyness</h3>
-              <p class="text-justify">A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/wonder.jpg" alt="Wonder" class="movie-img-size"></td>
-            <td>
-              <h3 class="text-left">Wonder</h3>
-              <p class="text-justify">Based on the New York Times bestseller, WONDER tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters 5th grade, attending a mainstream elementary school for the first time.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/war-horse.jpg" alt="War Horse" class="movie-img-size"></td>
-            <td>
-              <h3 class="text-left">War Horse</h3>
-              <p class="text-justify">Young Albert enlists to serve in World War I after his beloved horse is sold to the cavalry. Albert's hopeful journey takes him out of England and to the front lines as the war rages on.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="card-white text-center">
-      <h2>About this page</h2>
-      <p>This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
-      <ul class="list-inline">
-        <li><a href="#"><i class="fas fa-heart"></i></a></li>
-        <li><a href="#"><i class="fas fa-share"></i></a></li>
-        <li><a href="#"><i class="fas fa-star"></i></a></li>
-      </ul>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#infos"><i class="fas fa-info-circle"></i></a></li>
+      <li><a href="#social"><i class="fas fa-share-square"></i></a></li>
+      <li><a href="#movies"><i class="fas fa-film"></i></a></li>
+      <li><a href="#about"><i class="fas fa-plus-square"></i></a></li>
+    </ul>
+  </div>
+  <div id="page-content">
+    <div class="container">
+      <div class="card-white text-center" id="infos">
+        <img src="images/profile-picture.jpg" alt="Profile picture - Cyndel Stuyvers" id="profile-pic" class="img-circle border-grey">
+        <h1>Cyndel Stuyvers</h1>
+        <h2>Junior Programmer @ Le Wagon - Marseille</h2>
+        <p>Creative and passionate, I like to think out-of-the-box and I am always looking for new things to try and discover. I am also curious about everything relating new technologies, innovation and entrepreneurship.</p>
+        <p>Graduated with a Master's Degree in Marketing / Communication, and after 3 months in San Francisco, meeting inspiring people and embracing bright ideas, <strong>I decided to tackle new challenges and give to my career a new dimension</strong>.</p>
+        <p>So here I am in Batch #176 @ Le Wagon Marseille, ready to change my life while learning to code! 🚀</p>
+        <br>
+        <p><a href="www.lewagon.com" target="_blank" class="button-green">See for yourself</a></p>
+      </div>
+      <div class="card-white text-center" id="social">
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/cyndel.stuyvers" target="_blank"><i class="fab fa-facebook-f"></i><br>Facebook</a></li>
+          <li><a href="https://www.instagram.com/cyndels_/" target="_blank"><i class="fab fa-instagram"></i><br>Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/cyndel-stuyvers/" target="_blank"><i class="fab fa-linkedin-in"></i><br>Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="card-white" id="movies">
+        <h2 class="text-center">My favorite movies</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="images/pursuit-of-happyness.jpg" alt="The Pursuit of Happyness" class="movie-img-size"></td>
+              <td>
+                <h3 class="text-left">The Pursuit of Happyness</h3>
+                <p class="text-justify">A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/wonder.jpg" alt="Wonder" class="movie-img-size"></td>
+              <td>
+                <h3 class="text-left">Wonder</h3>
+                <p class="text-justify">Based on the New York Times bestseller, WONDER tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters 5th grade, attending a mainstream elementary school for the first time.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/war-horse.jpg" alt="War Horse" class="movie-img-size"></td>
+              <td>
+                <h3 class="text-left">War Horse</h3>
+                <p class="text-justify">Young Albert enlists to serve in World War I after his beloved horse is sold to the cavalry. Albert's hopeful journey takes him out of England and to the front lines as the war rages on.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-white text-center" id="about">
+        <h2>About this page</h2>
+        <p>This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>.<br>That was probably the best experience of my entire life.</p>
+      </div>
+      <div class="text-center" id="copyright">
+        <p>©Copyright Cyndel Stuyvers, 2018. All right reserved.</p>
+      </div>
     </div>
   </div>
 </body>

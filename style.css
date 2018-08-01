@@ -1,5 +1,5 @@
 body {
-  background-color: #fff6f6;
+  background-color: rgb(240, 240, 240);
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   color: rgb(80, 80, 80);
@@ -33,8 +33,36 @@ a:hover {
 }
 
 .container {
-  width: 500px;
+  width: 700px;
   margin: 30px auto;
+}
+
+#sidebar {
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(80, 80, 80)
+}
+
+#sidebar > ul > li > a {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+}
+
+#sidebar > ul > li > a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+#sidebar > ul > li {
+  margin: 50px auto;
+  text-align: center;
+}
+
+#page-content {
+  margin-left: 120px;
 }
 
 .card-white {
@@ -66,20 +94,20 @@ a:hover {
   border-radius: 50%;
 }
 
-.border-salmon {
-  border: 4px solid #ffcdb5;
+.border-grey {
+  border: 4px solid rgb(240, 240, 240);
 }
 
-.button-salmon {
-  background-color: #ffcdb5;
+.button-green {
+  background-color: #a1c45a;
   border-radius: 5px;
   padding: 10px;
   color: white;
   font-weight: 400;
 }
 
-.button-salmon:hover {
-  background-color: #ffb089;
+.button-green:hover {
+  background-color: #759a2c;
   color: white;
 }
 
@@ -103,4 +131,28 @@ table > tbody > tr > td > img {
 
 .fa-heart:before, .fa-share:before, .fa-star:before {
   font-size: 25px;
+}
+
+#copyright {
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 800px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
